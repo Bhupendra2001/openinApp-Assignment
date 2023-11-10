@@ -96,7 +96,8 @@ async function handleEmail(auth, threadId) {
 
       // TODO: Check senderEmail in the DB and handle accordingly
 
-      const replyMessage = 'Your automatic reply message here.';
+      const diwaliMessage = `Subject: Re: ${emailSubject}\n\nDear ${senderEmail.split('@')[0]},\n\nWishing you a joyous and prosperous Diwali! May the festival of lights bring happiness, success, and good health to you and your loved ones.\n\nAs we celebrate this special occasion, may the glow of Diyas illuminate your life with positivity and fulfillment.\n\nIf there's anything specific you'd like to discuss or share during this festive season, feel free to let me know. I'm here to assist you.\n\nHappy Diwali!\n\nWarm regards,\nBhupendra Namdev`;
+
       await sendReply(auth, threadId, emailSubject, replyMessage, senderEmail);
     }
   } catch (error) {
