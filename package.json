@@ -1,0 +1,19 @@
+{
+  "name": "openinapp_assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon index.js"
+  },
+  "author": "bhupendra namdev",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/local-auth": "^2.1.0",
+    "google-auth-library": "^9.2.0",
+    "googleapis": "^105.0.0",
+    "nodemon": "^3.0.1",
+    "querystring": "^0.2.1"
+  }
+}
